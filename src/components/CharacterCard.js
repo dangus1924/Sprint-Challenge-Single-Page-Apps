@@ -6,7 +6,7 @@ export default function CharacterCard(props) {
     const {name, status, species, origin, location, characterImg} = props;
 
     return (
-        <Card className='character-card'>
+        <Card>
         <Image src={characterImg} wrapped ui={false} />
         <Card.Content>
           <Card.Header>{name}</Card.Header>
@@ -14,7 +14,7 @@ export default function CharacterCard(props) {
           <Card.Description> Location: {location} </Card.Description>
           <Card.Description>Origin: {origin}</Card.Description>
         </Card.Content>
-    <Card.Content extra>
+        <Card.Content extra>
        <Icon name='tv'/> Episodes 
     </Card.Content>
   </Card>
